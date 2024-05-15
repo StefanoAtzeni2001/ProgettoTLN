@@ -172,7 +172,7 @@ def load_data(filename):
         all_labs = [labs1, labs2, ...] where labs1 is a sequence of
                 labels for the corresponding sentence
     """
-    file = open(filename)
+    file = open(filename, 'r', encoding='cp850', errors='replace')
     all_toks = []
     all_labs = []
     toks = []
