@@ -36,7 +36,7 @@ L2_REGULARIZATION_STRENGTH = 0.9 # default: 1
 PERCENT_OF_DATA_TO_TRAIN = 1
 PERCENT_OF_DATA_TO_TEST = 0.1
 
-# load up any external resources here 
+# load up any external resources here
 def initialize():
     """
         :return (dictionary data - any format that you wish, which
@@ -172,7 +172,7 @@ def load_data(filename):
         all_labs = [labs1, labs2, ...] where labs1 is a sequence of
                 labels for the corresponding sentence
     """
-    file = open(filename, 'r', encoding='cp850', errors='replace')
+    file = open(filename)
     all_toks = []
     all_labs = []
     toks = []
@@ -182,14 +182,14 @@ def load_data(filename):
         if "This data is licensed from" in line:
             continue
         cols = line.rstrip().split("\t")
-        if len(cols) < 3:
+        if len(cols) < 2:
             all_toks.append(toks)
             all_labs.append(labs)
             toks = []
             labs = []
             continue
-        toks.append(cols[1])
-        labs.append(cols[2])
+        toks.append(cols[0])
+        labs.append(cols[1])
 
     if len(toks) > 0:
         all_toks.append(toks)
@@ -203,15 +203,14 @@ def train(filename, data):
         train a model to generate Y_pred
     """
     all_toks, all_labs = load_data(filename)
+
     # subsample data
     number_of_data_to_use = int(len(all_toks) * PERCENT_OF_DATA_TO_TRAIN)
     indices_to_use = np.random.choice(range(len(all_toks)), number_of_data_to_use)
-    all_toks = [all_toks[i] for i in indices_to_use]
-    all_labs = [all_labs[i] for i in indices_to_use]
-    # all_toks = np.array(all_toks)[indices_to_use]
-    # all_labs = np.array(all_labs)[indices_to_use]
+    all_toks = np.array(all_toks)[indices_to_use]
+    all_labs = np.array(all_labs)[indices_to_use]
 
-    
+
     vocab = {}
 
     # X_verbose is a list of feature objects for the entire train dataset.
@@ -306,8 +305,8 @@ def test(filename, log_reg, data):
     # subsample data
     number_of_data_to_use = int(len(all_toks) * PERCENT_OF_DATA_TO_TEST)
     indices_to_use = np.random.choice(range(len(all_toks)), number_of_data_to_use)
-    all_toks = [all_toks[i] for i in indices_to_use]
-    all_labs = [all_labs[i] for i in indices_to_use]
+    all_toks = np.array(all_toks)[indices_to_use]
+    all_labs = np.array(all_labs)[indices_to_use]
 
     # possible output labels = all except START
     L = len(label_vocab) - 1
@@ -385,7 +384,7 @@ def decode(Y_pred):
         return viterbi_decode(Y_pred)
 
 
-# usage: python memm_tagger.py -t ../data/it/train.conllu ../data/it/test.conllu
+# usage: python memm_tagger.py -t wsj.pos.train wsj.pos.dev
 def main():
     if sys.argv[1] == "-t":
         print_message("Initialize Data")
@@ -396,7 +395,7 @@ def main():
         test(sys.argv[3], log_reg, data)
         print()
     else:
-        print("Usage: python memm_tagger.py -t ../data/it/train.conllu ../data/it/test.conllu")
+        print("Usage: python memm_tagger.py -t wsj.pos.train wsj.pos.dev")
 
 
 if __name__ == "__main__":
