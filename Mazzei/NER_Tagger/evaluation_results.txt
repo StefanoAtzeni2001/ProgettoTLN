@@ -162,3 +162,15 @@ it || 93.8 % | 60.4 % | 85.5 % || 93.9 % | 72.8 % | 65.7 % || 87.8 % | 1.8 % | 1
 es || 91.9 % | 55.3 % | 81.2 % || 94.1 % | 72.7 % | 73.9 % || 86.0 % | 1.7 % | 21.5 % ||
 ##################################
  
+##################################
+Data: 2024-05-19 11:06:21
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 4
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en || 84.0 % | 17.6 % | 25.0 % || 89.0 % | 35.3 % | 46.2 % || 79.0 % | 11.8 % | 33.3 % ||
+it || 98.0 % | 83.3 % | 100.0 % || 97.0 % | 100.0 % | 75.0 % || 92.0 % | 0.0 % | 0.0 % ||
+es || 97.0 % | 71.4 % | 83.3 % || 98.0 % | 100.0 % | 87.5 % || 92.0 % | 14.3 % | 50.0 % ||
+##################################
+ 
