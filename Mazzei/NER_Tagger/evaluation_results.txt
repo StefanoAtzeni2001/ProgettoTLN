@@ -1,0 +1,164 @@
+##################################
+Data: 2024-05-18 18:23:23
+Dimensione del dataset: 10000
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve
+en | 91.7 % | 48.1 % | 75.9 % | 92.8 % | 66.9 % | 65.4 %
+it | 93.0 % | 57.0 % | 83.2 % | 93.2 % | 68.7 % | 65.3 %
+es | 90.7 % | 53.0 % | 79.3 % | 93.6 % | 71.3 % | 75.7 %
+##################################
+ 
+##################################
+Data: 2024-05-18 18:24:31
+Dimensione del dataset: 10000
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve
+en | 91.7 % | 48.1 % | 75.9 % | 92.8 % | 66.9 % | 65.4 %
+it | 93.0 % | 57.0 % | 83.2 % | 93.2 % | 68.7 % | 65.3 %
+es | 90.7 % | 53.0 % | 79.3 % | 93.6 % | 71.3 % | 75.7 %
+##################################
+ 
+##################################
+Data: 2024-05-18 23:41:26
+Dimensione del dataset: 100000
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve
+en | 92.0 % | 48.5 % | 79.0 % | 93.2 % | 66.9 % | 63.8 %
+it | 90.0 % | 41.8 % | 59.3 % | 88.6 % | 51.5 % | 46.7 %
+es | 92.0 % | 57.0 % | 81.7 % | 94.2 % | 73.5 % | 73.7 %
+##################################
+ 
+##################################
+Data: 2024-05-19 08:53:08
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve
+##################################
+Data: 2024-05-19 08:54:55
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 08:55:13
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 08:55:32
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 09:06:30
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 09:06:42
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 09:07:38
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+##################################
+Data: 2024-05-19 09:08:51
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language | Acc Viterbi | Precision Viterbi | Recall Viterbi | Acc Nayve | Precision Nayve | Recall Nayve | Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent
+en | 84.0 % | 17.6 % | 25.0 % | 89.0 % | 35.3 % | 46.2 %| 79.0 % || 11.8 % || 33.3 % |
+it | 98.0 % | 83.3 % | 100.0 % | 97.0 % | 100.0 % | 75.0 %| 92.0 % || 0.0 % || 0.0 % |
+es | 97.0 % | 71.4 % | 83.3 % | 98.0 % | 100.0 % | 87.5 %| 92.0 % || 14.3 % || 50.0 % |
+##################################
+ 
+##################################
+Data: 2024-05-19 09:09:39
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en | 84.0 % | 17.6 % | 25.0 % | 89.0 % | 35.3 % | 46.2 %| 79.0 % || 11.8 % || 33.3 % |
+it | 98.0 % | 83.3 % | 100.0 % | 97.0 % | 100.0 % | 75.0 %| 92.0 % || 0.0 % || 0.0 % |
+es | 97.0 % | 71.4 % | 83.3 % | 98.0 % | 100.0 % | 87.5 %| 92.0 % || 14.3 % || 50.0 % |
+##################################
+ 
+##################################
+Data: 2024-05-19 09:10:50
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en || 84.0 % | 17.6 % | 25.0 % || 89.0 % | 35.3 % | 46.2 % || 79.0 % | 11.8 % | 33.3 % ||
+it || 98.0 % | 83.3 % | 100.0 % || 97.0 % | 100.0 % | 75.0 % || 92.0 % | 0.0 % | 0.0 % ||
+es || 97.0 % | 71.4 % | 83.3 % || 98.0 % | 100.0 % | 87.5 % || 92.0 % | 14.3 % | 50.0 % ||
+##################################
+ 
+##################################
+Data: 2024-05-19 09:12:25
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+##################################
+Data: 2024-05-19 09:13:11
+Dimensione del dataset: 100
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en || 84.0 % | 17.6 % | 25.0 % || 89.0 % | 35.3 % | 46.2 % || 79.0 % | 11.8 % | 33.3 % ||
+it || 98.0 % | 83.3 % | 100.0 % || 97.0 % | 100.0 % | 75.0 % || 92.0 % | 0.0 % | 0.0 % ||
+es || 97.0 % | 71.4 % | 83.3 % || 98.0 % | 100.0 % | 87.5 % || 92.0 % | 14.3 % | 50.0 % ||
+##################################
+ 
+##################################
+Data: 2024-05-19 09:23:29
+Dimensione del dataset: 10000
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en || 91.7 % | 48.1 % | 75.9 % || 92.8 % | 66.9 % | 65.4 % || 85.0 % | 3.8 % | 15.6 % ||
+it || 93.0 % | 57.0 % | 83.2 % || 93.2 % | 68.7 % | 65.3 % || 87.7 % | 2.5 % | 25.2 % ||
+es || 90.7 % | 53.0 % | 79.3 % || 93.6 % | 71.3 % | 75.7 % || 85.2 % | 1.6 % | 33.3 % ||
+##################################
+ 
+##################################
+Data: 2024-05-19 10:52:15
+Dimensione del dataset: 50000
+Tipo di Smoothing: Smoothing Type 1
+
+Statistiche aggiuntive:
+Language || Acc Viterbi | Precision Viterbi | Recall Viterbi || Acc Nayve | Precision Nayve | Recall Nayve || Acc Viterbi Sent | Precision Viterbi Sent | Recall Viterbi Sent||
+en || 92.2 % | 49.9 % | 79.9 % || 93.1 % | 66.8 % | 63.8 % || 86.4 % | 3.2 % | 17.0 % ||
+it || 93.8 % | 60.4 % | 85.5 % || 93.9 % | 72.8 % | 65.7 % || 87.8 % | 1.8 % | 12.0 % ||
+es || 91.9 % | 55.3 % | 81.2 % || 94.1 % | 72.7 % | 73.9 % || 86.0 % | 1.7 % | 21.5 % ||
+##################################
+ 
