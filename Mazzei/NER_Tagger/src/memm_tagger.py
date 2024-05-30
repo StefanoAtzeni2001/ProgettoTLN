@@ -209,15 +209,11 @@ def train(filename, data):
         train a model to generate Y_pred
     """
     all_toks, all_labs = load_data(filename)
-
     # subsample data
     number_of_data_to_use = int(len(all_toks) * PERCENT_OF_DATA_TO_TRAIN)
     indices_to_use = np.random.choice(range(len(all_toks)), number_of_data_to_use)
     all_toks = [all_toks[i] for i in indices_to_use]
     all_labs = [all_labs[i] for i in indices_to_use]
-    # all_toks = np.array(all_toks)[indices_to_use]
-    # all_labs = np.array(all_labs)[indices_to_use]
-
     vocab = {}
 
     # X_verbose is a list of feature objects for the entire train dataset.
@@ -302,20 +298,19 @@ def greedy_decode(Y_pred):
     return preds
 
 
-def test(filename, log_reg, data):
+def test(filename, log_reg, data,num_senteces):
     """
         predict labels using the trained model
         and evaluate the performance of model
     """
     all_toks, all_labs,  = load_data(filename)
     # subsample data
-    number_of_data_to_use = int(len(all_toks) * PERCENT_OF_DATA_TO_TEST)
-    indices_to_use = np.random.choice(range(len(all_toks)), number_of_data_to_use)
-    all_toks = [all_toks[i] for i in indices_to_use]
-    all_labs = [all_labs[i] for i in indices_to_use]
-    # all_toks = np.array(all_toks)[indices_to_use]
-    # all_labs = np.array(all_labs)[indices_to_use]
-    # possible output labels = all except START
+    # number_of_data_to_use = int(len(all_toks) * PERCENT_OF_DATA_TO_TEST)
+    # indices_to_use = np.random.choice(range(len(all_toks)), number_of_data_to_use)
+    # all_toks = [all_toks[i] for i in indices_to_use]
+    # all_labs = [all_labs[i] for i in indices_to_use]
+    all_toks=all_toks[:num_senteces]
+    all_labs=all_labs[:num_senteces]
     L = len(label_vocab) - 1
     sent_temp_df= pd.DataFrame()
     total_data = pd.DataFrame()
@@ -435,6 +430,7 @@ def save_to_conllu(dataframe,file_name,language):
 
 # usage: python memm_tagger.py -t wsj.pos.train wsj.pos.dev
 def main():
+    num_senteces=100
     languages = ["en"] #, "it", "es"]
     for language in languages:
       argt="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/train.conllu"
@@ -444,7 +440,7 @@ def main():
       print_message("Train Model")
       log_reg = train(argt, data)
       print_message("Test Model")
-      memm_df=test(argtest, log_reg, data)
+      memm_df=test(argtest, log_reg, data,num_senteces)
       output_file = "memm_tag.conllu"
       save_to_conllu(memm_df,output_file,language)
      
