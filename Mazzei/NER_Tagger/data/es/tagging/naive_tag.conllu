@@ -17,7 +17,7 @@
 16	es	O
 17	Ratchet	B-MISC
 18	;	O
-19	Clank	B-MISC
+19	Clank	I-MISC
 20	se	O
 21	puede	O
 22	utilizar	O
@@ -32,7 +32,7 @@
 2	,	O
 3	el	O
 4	jugador	O
-5	navega	O
+5	navega	B-MISC
 6	en	O
 7	diversos	O
 8	entornos	O
@@ -141,7 +141,7 @@
 15	parte	O
 16	de	O
 17	los	O
-18	afrikáner	O
+18	afrikáner	B-MISC
 19	.	O
 0	Su	O
 1	familia	O
@@ -186,7 +186,7 @@
 8	juvenil	O
 9	de	O
 10	la	O
-11	UEFA	B-ORG
+11	UEFA	I-MISC
 12	;	O
 13	en	O
 14	la	O
