@@ -10,6 +10,7 @@ import pandas as pd
 from sklearn import linear_model
 from scipy import sparse
 import pickle
+import os
 
 
 # Dictionary to store indices for each feature
@@ -282,7 +283,7 @@ def train(filename, data):
 
     # fit model
     print("fit model...")
-    log_reg = linear_model.LogisticRegression(C=L2_REGULARIZATION_STRENGTH, penalty='l2', n_jobs=4)
+    log_reg = linear_model.LogisticRegression(C=L2_REGULARIZATION_STRENGTH, penalty='l2', n_jobs=4,max_iter=300)
     log_reg.fit(sparse.coo_matrix(X), Y)
 
     return log_reg
@@ -325,7 +326,7 @@ def test(filename, log_reg, data):
 
     # for each sequence (sentence) in the test dataset
     for i in range(len(all_toks)):
-
+        print(i,"/",len(all_toks),end="\r")
         toks = all_toks[i]
         labs = all_labs[i]
 
@@ -384,7 +385,7 @@ def test(filename, log_reg, data):
             # Concatena il DataFrame temporaneo al DataFrame finale
             sent_temp_df=pd.concat([sent_temp_df, temp_df], ignore_index=True)
     
-        
+
         # Concatena il DataFrame temporaneo al DataFrame finale
         total_data_df = pd.concat([total_data, sent_temp_df], ignore_index=True)
     
@@ -410,7 +411,8 @@ def decode(Y_pred):
 
 def save_to_conllu(dataframe,file_name,language):
     # Creazione della lista di token da DataFrame
-    path="../data/"+language+"/tagging/"+file_name+".conllu"
+    path="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/tagging/"+file_name
+    
     tokens = []
     for _, row in dataframe.iterrows():
         token = {
@@ -433,10 +435,10 @@ def save_to_conllu(dataframe,file_name,language):
 
 # usage: python memm_tagger.py -t wsj.pos.train wsj.pos.dev
 def main():
-    languages = ["en", "it", "es"]
+    languages = ["en"] #, "it", "es"]
     for language in languages:
-      argt ="C:/Users/User/OneDrive/Desktop/Linguaggio naturale/Progetti/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/train.conllu"
-      argtest="C:/Users/User/OneDrive/Desktop/Linguaggio naturale/Progetti/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/test.conllu"
+      argt="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/train.conllu"
+      argtest="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/test.conllu"
       print_message("Initialize Data")
       data = initialize()
       print_message("Train Model")
