@@ -430,9 +430,10 @@ def save_to_conllu(dataframe,file_name,language):
 
 # usage: python memm_tagger.py -t wsj.pos.train wsj.pos.dev
 def main():
-    num_senteces=100
-    languages = ["en"] #, "it", "es"]
+    num_senteces=1000
+    languages = ["es"] #["it", "es","en"]
     for language in languages:
+      print(language)
       argt="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/train.conllu"
       argtest="/home/stefano/Desktop/ProgettoTLN/Mazzei/NER_Tagger/data/"+language+"/dataset/test.conllu"
       print_message("Initialize Data")
